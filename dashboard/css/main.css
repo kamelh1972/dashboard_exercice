@@ -97,9 +97,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+main{
+  display: flex;
+
+}
+header > main{
+  width: 90%;
+}
+section{
+  width: 50%;
+}
+
 h1{
   padding-top: 10px;
   color: white;
+}
+h2{
+  margin-left: 20px
 }
 header{
   width: 100%;
@@ -107,22 +121,15 @@ header{
   background-color: #4D9078;
   text-align: center;
 }
-table{
-  border: medium solid grey;
-
-
-  width: 30%;
-  margin-left: 30px;
-
+td,th{
+  padding: 10px;
 }
-td{
-  border-top: solid grey;
-  border-collapse: collapse;
+tr{
+  border: 1px solid grey;
   font-family: sans-serif;
   width: 30%;
   text-align: center;
   background-color: white;
-
   padding: 20px;
 }
 th{
@@ -135,17 +142,86 @@ caption{
   height: 10px;
   padding: 20px;
 }
+progress{
+  font-size: 40px;
+
+}
+label{
+  text-align:
+}
+#cercle1,#cercle2,#cercle3,#cercle4{
+    text-align: center;
+    width:120px;
+    height:120px;
+    border-radius:120%;
+    background-color: #F3DE8A;
+    color:Black;
+    font-size:12px;
+}
+
+.sectionleft{
+  background-color: white;
+}
+.sectionright{
+  background-color: pink;
+}
+.circle{
+  display: flex;
+  justify-content: space-around;
+
+}
+.id.cercle1{
+  background-color: #F3DE8A;
+}
+.id.cercle2{
+  background-color: #EB9486;
+}
 
 .flex-container {
   display: flex;
   flex-flow: wrap;
   margin: 30px;
-  align-content: space-around;
+  justify-content: flex-start;
+}
+.numero1{
+  margin:  20px;
+  border: medium solid grey;
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: 30px;
+}
+.mumero2{
+  margin-left: 30px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  width: 70%;
+}
+.stock{
+  background-color: #4D9078;
+  padding: 40px;
+}
+.cash{
+  background-color: #F3DE8A;
+  padding: 40px;
+}
+.Conversion{
+  background-color: #EB9486;
+  padding: 40px;
+}
+.warehouse{
+  background-color: #4D9078;
+  padding: 40px;
+}
+.progression{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+
+
 
 }
 
-
-}
 
 /* ==========================================================================
    Helper classes

@@ -21,14 +21,15 @@
 <header>
   <h1>Sales dashboards</h1>
 </header>
-<main>
+  <main>
+  <section class="sectionleft">
     <h2>Sales and states</h2>
-  <section class="flex-container">
+   <div class="flex-container">
   <div>
     <p>Product</p>
-    <input type="text" name="" value="Products name">
+    <input type="text" name="text" value="Products name" size="9">
   </div>
-  <div>
+   <div>
     <p>Price</p>
     <select class="option" name="">
       <option>-to+</option>
@@ -43,12 +44,10 @@
   <div>
     <button type="button" name="button">Sort</button>
   </div>
-</section>
+</div>
 
-<section class="tableau">
-
-
-    <table>
+<div class="tableau">
+    <table class="numero1">
       <caption>Sales records</caption>
       <thead>
         <tr><th>Article</><th>Price</th><th>Quantity</th></tr>
@@ -76,14 +75,43 @@
        <tr>
           <td>data</td>
           <td>data</td>
-          <td>data</td>            
+          <td>data</td>
       </tr>
       </body>
-
     </table>
+  </div>
 
+    <table class="mumero2">
+      <tr>
+        <td class="stock"><i class="fas fa-boxes"></i>Stocks</td>
+        <td class="cash"><i class="fas fa-dollar-sign"></i>Cash</td>
+      </tr>
+      <tr>
+        <td class="Conversion"><i class="fas fa-trophy"></i>Conversion</td>
+        <td class="warehouse"><i class="fas fa-warehouse"></i>Warehouse</td>
+      </tr>
+    </table>
+</section>
+<section class="sectionright">
+  <h2>Tendency indcators <i class=" fas fa-stethoscope"></i></h2>
+  <div class="circle">
+  <div id="cercle1">40$<br/>Average purchasse</div>
+  <div id="cercle2">30%<br/>Aborted</div>
+  <div id="cercle3">25480$<br/>Monthly sales</div>
+  <div id="cercle4">80%<br/>Satisfaction</div>
+  </div>
+  <div class="progression">
+    <h2>Charts <i class="fas fa-chart-bar"></i></h2>
+    <label for="entertainement">entertainement</label>
+    <progress id="entertainement" value="40" max="100">40%</progress>
+    <label for="hightech">High tech</label>
+    <progress id="hightech" value="80" max="100">80%</progress>
+    <label for="clothes">Clothes</label>
+    <progress id="clothes" value="60" max="100">60%</progress>
+</div>
 
-  </section>
+</section>
+
 </main>
 </body>
 
@@ -99,6 +127,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
