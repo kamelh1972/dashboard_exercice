@@ -6,7 +6,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="progress-bar.css" rel="stylesheet" type="text/css" />
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -41,7 +41,7 @@
       <option>0</option>
     </select>
   </div>
-  <div>
+
     <button type="button" name="button">Sort</button>
   </div>
 </div>
@@ -93,21 +93,25 @@
     </table>
 </section>
 <section class="sectionright">
-  <h2>Tendency indcators <i class=" fas fa-stethoscope"></i></h2>
+  <h2>Tendency indicators <i class=" fas fa-stethoscope"></i></h2>
   <div class="circle">
-  <div id="cercle1">40$<br/>Average purchasse</div>
-  <div id="cercle2">30%<br/>Aborted</div>
-  <div id="cercle3">25480$<br/>Monthly sales</div>
-  <div id="cercle4">80%<br/>Satisfaction</div>
+  <div id="cercle1"><br>40$<br/>Average purchasse</div>
+  <div id="cercle2"><br>30%<br/>Aborted</div>
+  <div id="cercle3"><br>25480$<br/>Monthly sales</div>
+  <div id="cercle4"><br>80%<br/>Satisfaction</div>
   </div>
-  <div class="progression">
     <h2>Charts <i class="fas fa-chart-bar"></i></h2>
-    <label for="entertainement">entertainement</label>
-    <progress id="entertainement" value="40" max="100">40%</progress>
-    <label for="hightech">High tech</label>
-    <progress id="hightech" value="80" max="100">80%</progress>
-    <label for="clothes">Clothes</label>
-    <progress id="clothes" value="60" max="100">60%</progress>
+  <div class="progression">
+    <div class="texte">
+      <label for="entertainement">entertainement</label>
+      <label for="hightech">High tech</label>
+      <label for="clothes">Clothes</label>
+    </div>
+    <div class="progress">
+      <progress id="progress-bar progress-bar-striped" role="progressbar" value="40" max="100">40%</progress>
+      <progress id="progress-bar progress-bar-striped" role="progressbar" value="80" max="100">80%</progress>
+      <progress id="progress-bar progress-bar-striped" role="progressbar" value="60" max="100">60%</progress>
+    </div>
 </div>
 
 </section>

@@ -99,10 +99,8 @@ textarea {
    ========================================================================== */
 main{
   display: flex;
-
-}
-header > main{
-  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 section{
   width: 50%;
@@ -112,6 +110,12 @@ h1{
   padding-top: 10px;
   color: white;
 }
+p{
+  font-size: 14px;
+  position: relative;
+  top: 1em;
+}
+
 h2{
   margin-left: 20px
 }
@@ -130,11 +134,10 @@ tr{
   width: 30%;
   text-align: center;
   background-color: white;
-  padding: 20px;
+
 }
-th{
-  margin-top: : 20px;
-}
+
+
 caption{
   background-color: #4D9078;
   color: white;
@@ -142,46 +145,71 @@ caption{
   height: 10px;
   padding: 20px;
 }
-progress{
-  font-size: 40px;
-
+select{
+  width: 90px;
 }
-label{
-  text-align:
+button{
+  height: 25px;
+  width: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 3em;
+  border-radius: 10%;
+  border: 1px solid green;
+  border-spacing: 10px;
+}
+progress{
+  color: white;
+  text-align: center;
+  width: 350px;
+  height: 58px;
+  margin: 20px;
+  background: Black;
+  -webkit-appearance: none;
+  appearance: none
+}
+progress::-webkit-progress-value {
+    background: #4D9078;
 }
 #cercle1,#cercle2,#cercle3,#cercle4{
     text-align: center;
     width:120px;
     height:120px;
     border-radius:120%;
-    background-color: #F3DE8A;
     color:Black;
     font-size:12px;
+    line-height: 30px;
 }
 
 .sectionleft{
   background-color: white;
 }
 .sectionright{
-  background-color: pink;
+  background-color: white;
 }
 .circle{
   display: flex;
   justify-content: space-around;
-
+}{
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
 }
-.id.cercle1{
+#cercle1{
   background-color: #F3DE8A;
 }
-.id.cercle2{
+#cercle2{
   background-color: #EB9486;
+}
+#cercle3{
+  background-color: #F3DE8A;
+}
+#cercle4{
+  background-color: #4D9078;
+
 }
 
 .flex-container {
   display: flex;
-  flex-flow: wrap;
   margin: 30px;
-  justify-content: flex-start;
 }
 .numero1{
   margin:  20px;
@@ -214,14 +242,18 @@ label{
 }
 .progression{
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-
-
-
-
 }
 
+.texte{
+  display: flex;
+  flex-direction: column;
+  line-height: 100px;
+  margin-left: 30px;
+}
+.progress{
+  margin-left: 50px;
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Helper classes
