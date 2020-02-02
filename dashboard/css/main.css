@@ -112,8 +112,11 @@ h1{
 }
 p{
   font-size: 14px;
-  position: relative;
-  top: 1em;
+  position: relative ;
+  top: 1em; left: 10px;
+}
+input{
+  font-size: 12px;
 }
 
 h2{
@@ -129,7 +132,7 @@ td,th{
   padding: 10px;
 }
 tr{
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   font-family: sans-serif;
   width: 30%;
   text-align: center;
@@ -146,31 +149,21 @@ caption{
   padding: 20px;
 }
 select{
-  width: 90px;
+  width: 80px;
+  margin-left: 10px;
+  font-size: 12px;
 }
 button{
-  height: 25px;
-  width: 100px;
-  margin-bottom: 20px;
+  margin: 10px;
+  height: 20px;
+  width: 70px;
   position: relative;
   top: 3em;
   border-radius: 10%;
   border: 1px solid green;
-  border-spacing: 10px;
+  font-size: 12px;
 }
-progress{
-  color: white;
-  text-align: center;
-  width: 350px;
-  height: 58px;
-  margin: 20px;
-  background: Black;
-  -webkit-appearance: none;
-  appearance: none
-}
-progress::-webkit-progress-value {
-    background: #4D9078;
-}
+
 #cercle1,#cercle2,#cercle3,#cercle4{
     text-align: center;
     width:120px;
@@ -190,9 +183,8 @@ progress::-webkit-progress-value {
 .circle{
   display: flex;
   justify-content: space-around;
-}{
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
 }
+
 #cercle1{
   background-color: #F3DE8A;
 }
@@ -213,14 +205,14 @@ progress::-webkit-progress-value {
 }
 .numero1{
   margin:  20px;
-  border: medium solid grey;
+  border: medium solid lightgrey;
   border-collapse: collapse;
   width: 70%;
   margin-left: 30px;
 }
 .mumero2{
   margin-left: 30px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   border-collapse: collapse;
   width: 70%;
 }
@@ -241,18 +233,45 @@ progress::-webkit-progress-value {
   padding: 40px;
 }
 .progression{
-  display: flex;
+  background-color: white;
+
+
 }
 
 .texte{
+  margin-left: 20px;
+  float: left;
   display: flex;
   flex-direction: column;
-  line-height: 100px;
-  margin-left: 30px;
+  line-height: 90px;
 }
 .progress{
-  margin-left: 50px;
+  width: 70%;
   overflow: hidden;
+  margin: 15px;
+  background-color: lightgrey;
+  margin-left: 150px;
+  margin-top: 1%;
+}
+.progress-bar{
+  height: 45px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+.progress-bar-striped{
+  background-color: #4D9078;
+}
+.progress-bar{
+  width: 40%;
+}
+
+.progress-bar{
+  width: 80%;
+}
+.progress-bar{
+  width: 60%;
 }
 
 /* ==========================================================================
